@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #5a5a5a
+}
+
+li {
+  list-style: none;
+}
+
+#lay-main {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.lay-init {
+  position: relative;
+  margin-left: 50px;
+}
+
+.lay-avator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  border: 1px solid #ddd;
+}
+
+.lay-avator img {
+  width: 100%;
+  height: 100%;
+}
+
+.lay-init textarea {
+  padding: 10px 15px;
+  width: 100%;
+  min-height: 80px;
+  height: auto;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  background-color: #fff;
+  resize: none;
+  display: inline-block;
+  vertical-align: top;
+  outline-style: none;
+}
+
+.lay-submit {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.lay-commentBtn {
+  padding: 8px 20px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  background: #409EFF;
+  display: inline-block;
+  float: right;
+}
+
+.lay-commentBtn:hover {
+  background: #0077e6
+}
+
+.lay-cancel {
+  float: right;
+  padding: 8px 20px;
+  color: #969696;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.lay-content {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.lay-personInfo {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.lay-person-avator {
+  margin-right: 5px;
+  width: 38px;
+  height: 38px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.lay-person-avator img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.lay-title {
+  padding-bottom: 20px;
+}
+
+.lay-comment {
+  padding: 20px 0 30px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.lay-comment-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lay-comment-name h3 {
+  font-size: 15px;
+  color: #333;
+}
+
+.lay-comment-name p {
+  font-size: 12px;
+  color: #969696;
+}
+
+.lay-comment-content p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.lay-ztool a {
+  margin-right: 10px;
+  color: #8590a6;
+}
+
+.lay-ztool a:hover {
+  color: #5a5a5a
+}
+
+.lay-ztool span {
+  font-size: 14px
+}
+
+.lay-zreply {
+  margin-top: 20px
+}
+
+.lay-zreply textarea {
+  padding: 10px 15px;
+  width: 100%;
+  resize: none;
+  display: inline-block;
+  vertical-align: top;
+  outline-style: none;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  font-size: 14px
+}
+
+.lay-zrelist {
+  padding: 10px 20px;
+  background: #f6f6f6;
+  margin-top: 10px;
+  border-radius: 4px
+}
+
+.lay-zrelist li {
+  border-bottom: 1px dashed #ccc;
+  padding: 10px 0
+}
+
+.lay-zrelist li:first-child {
+  padding-top: 0
+}
+
+.lay-zrelist li:last-child {
+  border: 0;
+  padding-bottom: 0
+}
+
+.lay-zrelist li h5 {
+  color: #8590a6;
+  font-weight: normal;
+  font-size: 14px
+}
+
+.lay-zrelist li p {
+  color: #8590a6;
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.lay-zrelist li p i {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.lay-zrelist li p a {
+  color: #8590a6;
+}
+
+.lay-zrelist li p a:hover {
+  color: #5a5a5a
+}
