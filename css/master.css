@@ -62,17 +62,19 @@ li {
   width: 100%;
   overflow: hidden;
   margin-top: 10px;
+  display: none;
 }
 
 .lay-commentBtn {
   padding: 8px 20px;
   border-radius: 3px;
-  color: #fff;
+  color: #fff !important;
   text-align: center;
   font-size: 14px;
   background: #409EFF;
   display: inline-block;
   float: right;
+  transition: ease-in-out 0.5s;
 }
 
 .lay-commentBtn:hover {
@@ -156,7 +158,8 @@ li {
 }
 
 .lay-zreply {
-  margin-top: 20px
+  margin-top: 20px;
+  display: none
 }
 
 .lay-zreply textarea {
