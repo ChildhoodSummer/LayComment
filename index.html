@@ -11,7 +11,7 @@
     <div id="lay-main" v-cloak>
       <div class="lay-init">
         <a class="lay-avator">
-          <img src="ava.jpg">
+          <img src="//yimg.vip/www/0.jpeg">
         </a>
         <textarea placeholder="写下你的评论..." v-model="commentText" @input="commenttopChange"></textarea>
         <div class="lay-submit" v-if="topcommentBtn">
@@ -21,27 +21,27 @@
       </div>
       <div class="lay-content" v-if="commentlist!=''">
         <div class="lay-title">
-          <h3>{{comminIndex}} 条评论</h3>
+          <h3>${comminIndex} 条评论</h3>
         </div>
         <div class="lay-comment" v-for="(i,index) in commentlist" v-if="i.parentId==='0'">
           <div class="lay-personInfo">
-            <a href="#" class="lay-person-avator">
-              <img src="ava.jpg" alt="">
+            <a href="javascript:;" class="lay-person-avator">
+              <img :src="i.avatar" alt="">
             </a>
             <div class="lay-comment-name">
               <h3 class="lay-comment-title">
-                {{i.name}}{{comminIndex}}
+                ${i.name}
               </h3>
-              <p>{{i.floor}} 楼 · {{i.date}}</p>
+              <p>${i.floor} 楼 · ${i.date}</p>
             </div>
           </div>
           <div class="lay-comment-content">
-            <p>{{i.content}}</p>
+            <p>${i.content}</p>
             <div class="lay-ztool">
-              <a href="javascript:;">
+              <!-- <a href="javascript:;">
                 <i class="iconfont icon-dianzan1"></i>
                 <span>赞</span>
-              </a>
+              </a> -->
               <a href="javascript:;">
                 <i class="iconfont icon-icon_reply"></i>
                 <span @click="openReply(i)">回复</span>
@@ -56,9 +56,9 @@
             </div>
             <ul class="lay-zrelist">
               <li v-for="(j,dndex) in commentlist" v-if="j.parentId === i.id">
-                <h5>{{j.name}}：@{{j.replyName}} {{j.content}}</h5>
+                <h5><span>${j.name}</span>：<span>@${j.replyName}</span> ${j.content}</h5>
                 <p>
-                  <span>{{j.date}} </span>
+                  <span>${j.date} </span>
                   <a href="javascript:;">
                     <i class="iconfont icon-icon_reply"></i>
                     <span @click="openReply(j)">回复</span>
@@ -74,11 +74,10 @@
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="js/vue.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/main.js"></script>
